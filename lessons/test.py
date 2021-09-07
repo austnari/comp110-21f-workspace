@@ -1,0 +1,1 @@
+print(int(randint(1, 4)))

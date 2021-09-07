@@ -1,4 +1,4 @@
-"""Practicing numberic operators."""
+"""Practicing numberic operators"""
 
 __author__ = "730396074"
 
