@@ -20,9 +20,8 @@ else:
         print(fortune_two)
     else:
         if i == 3:
-            print(fortune_three)
+            print(fortune_three) 
         else:
             print(fortune_four)
 
-
-print("Now, go spread positive vibes!")
+print("Now, go spread postive vibes!")
