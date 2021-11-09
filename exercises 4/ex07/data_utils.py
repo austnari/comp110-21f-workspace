@@ -64,9 +64,6 @@ def head(data_cols: dict[str, list[str]], n: int) -> dict[str, list[str]]:
         result[dictionary_keys[d]] = new_values
         d += 1
 
-    if n >= len(result):
-        return data_cols
-
     return result
 
 
@@ -92,6 +89,7 @@ def select(data: dict[str, list[str]], wanted_columns: list[str]) -> dict[str, l
 
 def concat(data: dict[str, list[str]], data2: dict[str, list[str]]) -> dict[str, list[str]]:
     """Combines two column-based tables."""
+    
     result: dict[str, list[str]] = {}
     for key in data:
         value: list[str] = data[key]
@@ -99,11 +97,11 @@ def concat(data: dict[str, list[str]], data2: dict[str, list[str]]) -> dict[str,
 
     for key in data2:
         if key in result:
-            value2: list[str] = data2[key]
-            result[key] += value2
+            value: list[str] = data2[key]
+            result[key] += value
         else:
-            value3: list[str] = data2[key]
-            result[key] = value3
+            value: list[str] = data2[key]
+            result[key] = value
 
     return result
 
